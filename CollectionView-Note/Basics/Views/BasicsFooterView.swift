@@ -15,6 +15,7 @@ class BasicsFooterView: UICollectionReusableView {
   
   override func awakeFromNib() {
     super.awakeFromNib()
+    backgroundColor = UIColor.white
     titleLabel.textColor = UIColor.gray
     titleLabel.font = UIFont.systemFont(ofSize: 14)
   }

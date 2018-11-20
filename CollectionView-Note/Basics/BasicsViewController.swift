@@ -31,6 +31,8 @@ class BasicsViewController: UIViewController {
     flowLayout?.itemSize = CGSize(width: halfWidth, height: halfWidth)
     flowLayout?.minimumLineSpacing = 1
     flowLayout?.minimumInteritemSpacing = 1
+    flowLayout?.sectionHeadersPinToVisibleBounds = true
+    flowLayout?.sectionFootersPinToVisibleBounds = true
     flowLayout?.headerReferenceSize = CGSize(width: view.bounds.width, height: 50)
     flowLayout?.footerReferenceSize = CGSize(width: view.bounds.width, height: 30)
     
