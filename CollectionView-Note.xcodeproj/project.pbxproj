@@ -24,6 +24,10 @@
 		814BA9FE21A29AAB003AD86C /* CardLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814BA9FD21A29AAB003AD86C /* CardLayout.swift */; };
 		814BAA0021A29D81003AD86C /* WaterFallsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814BA9FF21A29D81003AD86C /* WaterFallsViewController.swift */; };
 		814BAA0221A29DAA003AD86C /* WaterFallsLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814BAA0121A29DAA003AD86C /* WaterFallsLayout.swift */; };
+		814BAA0421A3AC1F003AD86C /* StretchyHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814BAA0321A3AC1F003AD86C /* StretchyHeaderViewController.swift */; };
+		814BAA0621A3AE18003AD86C /* StretchyAndStickyLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814BAA0521A3AE18003AD86C /* StretchyAndStickyLayout.swift */; };
+		814BAA0A21A3B39A003AD86C /* ImageHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814BAA0821A3B39A003AD86C /* ImageHeaderView.swift */; };
+		814BAA0B21A3B39A003AD86C /* ImageHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 814BAA0921A3B39A003AD86C /* ImageHeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,10 @@
 		814BA9FD21A29AAB003AD86C /* CardLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardLayout.swift; sourceTree = "<group>"; };
 		814BA9FF21A29D81003AD86C /* WaterFallsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterFallsViewController.swift; sourceTree = "<group>"; };
 		814BAA0121A29DAA003AD86C /* WaterFallsLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterFallsLayout.swift; sourceTree = "<group>"; };
+		814BAA0321A3AC1F003AD86C /* StretchyHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StretchyHeaderViewController.swift; path = ../../../../Documents/StretchyHeaderViewController.swift; sourceTree = "<group>"; };
+		814BAA0521A3AE18003AD86C /* StretchyAndStickyLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StretchyAndStickyLayout.swift; path = ../../../../../Documents/StretchyAndStickyLayout.swift; sourceTree = "<group>"; };
+		814BAA0821A3B39A003AD86C /* ImageHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImageHeaderView.swift; path = ../../../../../Documents/ImageHeaderView.swift; sourceTree = "<group>"; };
+		814BAA0921A3B39A003AD86C /* ImageHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ImageHeaderView.xib; path = ../../../../../Documents/ImageHeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,9 +161,11 @@
 		814BA9F921A29993003AD86C /* CustomLayout */ = {
 			isa = PBXGroup;
 			children = (
+				814BAA0721A3B377003AD86C /* Views */,
 				814BA9FA21A29A0F003AD86C /* Layouts */,
 				814BA9FB21A29A2B003AD86C /* CardViewController.swift */,
 				814BA9FF21A29D81003AD86C /* WaterFallsViewController.swift */,
+				814BAA0321A3AC1F003AD86C /* StretchyHeaderViewController.swift */,
 			);
 			path = CustomLayout;
 			sourceTree = "<group>";
@@ -165,8 +175,18 @@
 			children = (
 				814BA9FD21A29AAB003AD86C /* CardLayout.swift */,
 				814BAA0121A29DAA003AD86C /* WaterFallsLayout.swift */,
+				814BAA0521A3AE18003AD86C /* StretchyAndStickyLayout.swift */,
 			);
 			path = Layouts;
+			sourceTree = "<group>";
+		};
+		814BAA0721A3B377003AD86C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				814BAA0821A3B39A003AD86C /* ImageHeaderView.swift */,
+				814BAA0921A3B39A003AD86C /* ImageHeaderView.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +275,7 @@
 				814BA9CE21A250D6003AD86C /* Assets.xcassets in Resources */,
 				814BA9F221A2632C003AD86C /* BasicsHeaderView.xib in Resources */,
 				814BA9CC21A250D5003AD86C /* Main.storyboard in Resources */,
+				814BAA0B21A3B39A003AD86C /* ImageHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,12 +296,15 @@
 				814BA9F521A265B9003AD86C /* BasicsFooterView.swift in Sources */,
 				814BA9C721A250D5003AD86C /* AppDelegate.swift in Sources */,
 				814BA9F021A262AE003AD86C /* BasicsHeaderView.swift in Sources */,
+				814BAA0421A3AC1F003AD86C /* StretchyHeaderViewController.swift in Sources */,
 				814BA9F821A2879A003AD86C /* BasicsVIewController02.swift in Sources */,
 				814BA9FC21A29A2B003AD86C /* CardViewController.swift in Sources */,
 				814BA9EE21A25689003AD86C /* DataManager.swift in Sources */,
+				814BAA0A21A3B39A003AD86C /* ImageHeaderView.swift in Sources */,
 				814BA9EB21A2530A003AD86C /* BasicsCell.swift in Sources */,
 				814BAA0221A29DAA003AD86C /* WaterFallsLayout.swift in Sources */,
 				814BA9FE21A29AAB003AD86C /* CardLayout.swift in Sources */,
+				814BAA0621A3AE18003AD86C /* StretchyAndStickyLayout.swift in Sources */,
 				814BA9E821A25202003AD86C /* BasicsViewController.swift in Sources */,
 				814BAA0021A29D81003AD86C /* WaterFallsViewController.swift in Sources */,
 			);
