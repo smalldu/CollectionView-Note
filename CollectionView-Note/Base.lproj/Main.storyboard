@@ -453,14 +453,27 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8c7-wO-peH"/>
                     </view>
-                    <navigationItem key="navigationItem" id="UFO-W3-PTL"/>
+                    <navigationItem key="navigationItem" id="UFO-W3-PTL">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="oqQ-PD-zc4">
+                                <connections>
+                                    <action selector="addTag:" destination="Qvg-du-0P3" id="YWx-pe-zef"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="trash" id="MgC-y3-o6S">
+                                <connections>
+                                    <action selector="deleteTag:" destination="Qvg-du-0P3" id="iME-kc-80b"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="8CO-eu-Dwp" id="0eE-v4-1hO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tXO-5m-Egf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1416.8" y="-1089.8050974512744"/>
+            <point key="canvasLocation" x="1417" y="-886"/>
         </scene>
     </scenes>
 </document>

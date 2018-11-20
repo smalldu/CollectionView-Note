@@ -34,7 +34,7 @@ class DataManager {
   
   let randomText = "黑发不知勤学早白首方悔读书迟迟日江山丽春风花草香杜甫绝句春色满园关不住一枝红杏出墙来叶绍翁游园不值好雨知时节当春乃发生杜甫春雨夏天小荷才露尖尖角早有蜻蜓立上头杨万里小池接天莲叶无穷碧映日荷花别样红"
   
-  private func genernalText() -> String{
+  func genernalText() -> String{
     let textCount = randomText.count
     let randomIndex = arc4random_uniform(UInt32(textCount))
     let start = max(0, Int(randomIndex)-7)
@@ -53,9 +53,9 @@ class DataManager {
     var tags2: [String] = []
     var tags3: [String] = []
     
-    for i in 0..<100 {
+    for i in 0..<50 {
       if i%3 == 0 {
-        tags1.append( genernalText() )
+        tags1.append(genernalText())
       }
       if i%2 == 0{
         tags2.append(genernalText())
