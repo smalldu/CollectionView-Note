@@ -41,10 +41,8 @@ class DataManager {
     let startIndex = randomText.startIndex
     let step = arc4random_uniform(5) + 2 // 2到5个字
     let startTextIndex = randomText.index(startIndex, offsetBy: start)
-    print("start : \(start) , step: \(step)")
     let endTexIndex = randomText.index(startIndex, offsetBy: start + Int(step))
     let text = String(randomText[startTextIndex ..< endTexIndex])
-    print(text)
     return text
   }
   

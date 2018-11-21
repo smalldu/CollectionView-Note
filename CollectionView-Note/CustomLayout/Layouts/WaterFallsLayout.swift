@@ -14,11 +14,11 @@ protocol WaterFallsLayoutDelegate {
 
 class WaterFallsLayout: UICollectionViewLayout {
   
-  var delegate: WaterFallsLayoutDelegate?
   var numberOfColumns = 2 // 列
   var minimumLineSpacing: CGFloat = 0
   var minimumInteritemSpacing: CGFloat = 0
   
+  var delegate: WaterFallsLayoutDelegate?
   private var cache = [UICollectionViewLayoutAttributes]()
   private var contentHeight: CGFloat = 0
   
@@ -41,7 +41,7 @@ class WaterFallsLayout: UICollectionViewLayout {
         xOffsets.append(CGFloat(column)*columnWidth + minimumInteritemSpacing*CGFloat(column+1))
       }
       
-      var yOffsets = [CGFloat](repeating: minimumInteritemSpacing, count: numberOfColumns)
+      var yOffsets = [CGFloat](repeating: minimumLineSpacing, count: numberOfColumns)
       var column = 0
       for item in 0..<collectionView.numberOfItems(inSection: 0) {
         let indexPath = IndexPath(item: item, section: 0)
@@ -51,7 +51,7 @@ class WaterFallsLayout: UICollectionViewLayout {
         attributes.frame = frame
         cache.append(attributes)
         contentHeight = max(contentHeight, frame.maxY)
-        yOffsets[column] = yOffsets[column] + height + minimumInteritemSpacing // 下一个column的高度
+        yOffsets[column] = yOffsets[column] + height + minimumLineSpacing // 下一个column的高度
         column = column >= (numberOfColumns - 1) ? 0:column+1
       }
     }
