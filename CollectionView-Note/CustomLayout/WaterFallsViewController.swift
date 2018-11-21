@@ -41,7 +41,6 @@ extension WaterFallsViewController: UICollectionViewDataSource {
     cell.backgroundColor = colors[indexPath.row]
     return cell
   }
-  
 }
 
 
